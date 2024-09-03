@@ -1,0 +1,95 @@
+TYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música do Matuê</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .video-catalog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .video-item {
+            flex: 1 1 calc(50% - 1rem);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+        }
+        .video-item h2 {
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0.5rem;
+            background: #f4f4f4;
+        }
+        .video-item p {
+            padding: 0 0.5rem;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .video-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Matuê</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="video-catalog">
+            <div class="video-item">
+                <iframe src="https://youtu.be/9JLBPfFpYp0?si=yXhxb49BgiI4F_Oy" title="Como Perder Um Homem Em 10 Dias"></iframe>
+                <h2>A Morte do Autotune</h2>
+                <p>A Morte do autotune.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://youtu.be/hjyS7iVoQ9Y?si=CumqE92j6ZW-9ubO" title="Longe Deste Insensato Mundo"></iframe>
+                <h2>Anos luz</h2>
+                <p>Anos luz.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://youtu.be/kZqfUydFB1k?si=3PNtxObjtIDiaZ0c" title="A Bela e a Fera"></iframe>
+                <h2>Lugar distante</h2>
+                <p>Lugar distante.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://youtu.be/s5Rid-N0o4g?si=ic_SI7z7NzVJJ4tr" title="Orgulho e Preconceito"></iframe>
+                <h2>Vampiro</h2>
+                <p>Vampiro.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
